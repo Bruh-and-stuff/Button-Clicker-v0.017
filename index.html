@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title>Button Clicker</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+        <link rel="stylesheet" href="style.css">
+      </head>
+      <body>
+        <center>
+            <div id="desc">
+                <h3 id="stouf">Button Clicker</h3>
+                <span id="clicks">Buttons: 0</span>
+                <br>
+                <span id="cps">Buttons per Second: 0</span>
+            </div>
+            <br>
+            <button type="button" class="btn btn-info" id="MainBTN" onclick="clickMe()">Button. Click me to get buttons!</button>
+            <br><br><br>
+            <div id="shoppingArea">
+                <button id="counterCPC1" class="btn btn-success counterCPC buyThis" onclick="cpcIncrease1()">
+                    <h3 class="shopName">Extra Finger</h3>
+                    <br>
+                    <span class="descriptionShop">
+                        Ooh! An extra finger! Maybe this will help me click more! 
+                        <br>
+                        Gives you +1 button per click (BPC).
+                    </span>
+                    <br>
+                    <span class="descriptionCost" id="costA1">Cost: 10 clicks</span>
+                </button>
+                <span class="amountOfItem" id="amountA1">0</span>
+                <br><br><br>
+                <button id="counterCPC2" class="btn btn-success counterCPC buyThis" onclick="cpcIncrease2()">
+                    <h3 class="shopName">Extra Hand</h3>
+                    <br>
+                    <span class="descriptionShop">
+                        What's better than an extra finger? An extra hand.
+                        <br>
+                        Gives you +5 buttons per click (BPC).
+                    </span>
+                    <br>
+                    <span class="descriptionCost" id="costA2">Cost: 40 clicks</span>
+                </button>
+                <span class="amountOfItem" id="amountA2">0</span>
+                <br><br><br>
+                <button id="counterCPS1" class="btn btn-info counterCPS buyThis" onclick="cpsIncrease1()">
+                    <h3 class="shopName">Person</h3>
+                    <br>
+                    <span class="descriptionShop">
+                        Is this person your friend, or your slave?
+                        <br>
+                        Gives you +1 button per second (BPS).
+                    </span>
+                    <br>
+                    <span class="descriptionCost" id="costB1">Cost: 100 buttons</span>
+                </button>
+                <span class="amountOfItem" id="amountB1">0</span>
+                <br><br><br>
+                <button id="counterCPS2" class="btn btn-info counterCPS buyThis" onclick="cpsIncrease2()">
+                    <h3 class="shopName">Fidget Spinner</h3>
+                    <br>
+                    <span class="descriptionShop">
+                        An unexpected one!
+                        <br>
+                        Gives you +7 buttons per second (BPS).
+                    </span>
+                    <br>
+                    <span class="descriptionCost" id="costB2">Cost: 1200 buttons</span>
+                </button>
+                <span class="amountOfItem" id="amountB2">0</span>
+                <br><br><br>
+                <button id="counterCPS3" class="btn btn-info counterCPS buyThis" onclick="cpsIncrease3()">
+                    <h3 class="shopName">Button Masher</h3>
+                    <br>
+                    <span class="descriptionShop">
+                        Did you really go out of your way to buy this?
+                        <br>
+                        Gives you +34 buttons per second (BPS).
+                    </span>
+                    <br>
+                    <span class="descriptionCost" id="costB3">Cost: 17000</span>
+                </button>
+                <span class="amountOfItem" id="amountB3">0</span>
+                <br><br><br>
+                <button id="counterCPS4" class="btn btn-info counterCPS buyThis" onclick="cpsIncrease4()">
+                    <h3 class="shopName">Autoclicker</h3>
+                    <br>
+                    <span class="descriptionShop">
+                        Why are you hacking?
+                        <br>
+                        Gives you +238 buttons per second (BPS).
+                    </span>
+                    <br>
+                    <span class="descriptionCost" id="costB4">Cost: 203000</span>
+                </button>
+                <span class="amountOfItem" id="amountB4">0</span>
+            </div>
+            <br>
+            <br>
+            <br>
+            <h4 id="ver">version 0.017 - Buyablesfest</h4>
+        </center>
+        <script src="main.js"></script>
+      </body>
+</html>

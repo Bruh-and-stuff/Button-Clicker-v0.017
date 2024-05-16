@@ -1,0 +1,77 @@
+body{
+    font-family:monospace;
+}
+#desc{
+    width:100%;
+    background-color:aquamarine;
+    padding:30px;
+    top: 0;
+    box-shadow: 0px 5px 25px gray;
+}
+#clicks{
+    font-size: 25px;
+    top: 0;
+}
+#cps{
+    font-size: 17px;
+}
+#stouf{
+    font-size: 45px;
+}
+#MainBTN{
+    width: 90%;
+    height: 50px;
+    font-size: 25px;
+    padding-bottom: 30px;
+    outline: none;
+}
+
+#MainBTN:hover{
+    animation-name: hover ;
+    animation-duration: 0.5s ;
+    animation-fill-mode: forwards ;
+}
+@keyframes hover{
+    to{background-color: rgb(0, 189, 252);}
+    from{background-color: rgb(117, 191, 216);}
+}
+#MainBTN:not(:hover){
+    animation-name: releaseHover;
+    animation-duration: 0.5s ;
+    animation-fill-mode: forwards ;
+}
+@keyframes releaseHover{
+    from{background-color: rgb(0, 189, 252);}
+    to{background-color: rgb(117, 191, 216);}
+}
+
+#shoppingArea{
+    width: 90%;
+    padding: 20px;
+    background-color:beige;
+    border-radius:20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.descriptionShop{
+    font-size:15px;
+}
+.descriptionCost{
+    font-size:20px;
+}
+.shopName{
+    font-size:25px;
+}
+.amountOfItem{
+    opacity: 0.3;
+    font-size: 50px;
+}
+.buyThis{
+    width: 50%;
+    overflow-wrap: break-word;
+}
+
+#ver{
+    bottom: 0;
+}
+
