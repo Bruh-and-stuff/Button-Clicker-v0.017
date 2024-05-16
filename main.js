@@ -118,7 +118,6 @@ function makeCPS(){
     console.log(clicks)
     showClicks = "Buttons: " + Math.floor(clicks)
     document.getElementById("cps").innerHTML = "Buttons per Second: "+cps
-    clicks = clicks + 2000
 }
 
 setInterval(() => {
